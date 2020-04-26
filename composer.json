@@ -1,0 +1,28 @@
+{
+    "name": "ManuelMolina97/php-fake-e2e-example",
+    "authors": [
+        {
+            "name": "Manuel Molina",
+            "email": "molina@forgdev.com"
+        }
+    ],
+    "require": {
+        "usmanhalalit/pixie": "^2.0",
+        "php-di/php-di": "^6.0",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "ext-curl": "*",
+        "slim/slim": "^4.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "scripts": {
+        "test:e2e:trainer:get": "PHP_ENV=e2e phpunit --bootstrap e2e/autoload.php e2e/Trainer/Get*",
+        "test:e2e:trainer:create": "PHP_ENV=e2e phpunit --bootstrap e2e/autoload.php e2e/Trainer/Create*",
+        "test:e2e:trainer": "PHP_ENV=e2e phpunit --bootstrap e2e/autoload.php e2e/Trainer",
+        "test:e2e:gym": "PHP_ENV=e2e phpunit --bootstrap e2e/autoload.php e2e/Gym",
+        "test:e2e:gym-trainers": "PHP_ENV=e2e phpunit --bootstrap e2e/autoload.php e2e/GymTrainers",
+        "test:e2e:all": "PHP_ENV=e2e phpunit --bootstrap e2e/autoload.php e2e/"
+    }
+}

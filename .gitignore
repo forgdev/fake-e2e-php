@@ -1,0 +1,10 @@
+vendor/
+composer.lock
+.buildpath
+.project
+.settings/
+.vscode/
+.idea/
+.phpunit.result.cache
+cache/
+coverage/*
